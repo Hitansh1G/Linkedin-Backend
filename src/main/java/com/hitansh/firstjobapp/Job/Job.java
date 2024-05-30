@@ -1,5 +1,6 @@
 package com.hitansh.firstjobapp.Job;
 
+import com.hitansh.firstjobapp.Company.Company;
 import jakarta.persistence.*;
 
 @Entity
@@ -13,7 +14,16 @@ public class Job {
     private String minSalary;
     private String maxSalary;
     private String location;
+    @ManyToOne
+    private Company company;
 
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
+    }
 
     //when working with jpa always need to have a default constructors...
     // because jpa needs to create instances of entity class during the retrieval of data from the database and jpa uses reflections to create instances of entities, \

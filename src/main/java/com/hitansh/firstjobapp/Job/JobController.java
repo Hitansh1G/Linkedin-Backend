@@ -1,6 +1,7 @@
 package com.hitansh.firstjobapp.Job;
 
 
+import com.hitansh.firstjobapp.Company.Company;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
