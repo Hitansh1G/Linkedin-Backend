@@ -34,8 +34,14 @@ public class CompanyServiceImp implements CompanyService {
             companyToUpdate.setJobs(company.getJobs());
             companyRepository.save(companyToUpdate);
             return true;
-        }else return false;
+        }
+        return false;
 
+    }
+
+    @Override
+    public void createCompany(Company company) {
+        companyRepository.save(company);
     }
 
 
