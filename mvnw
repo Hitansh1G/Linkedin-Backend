@@ -1,3 +1,4 @@
+export JAVA_HOME=/Users/hitansh/Library/Java/JavaVirtualMachines/openjdk-21.0.2/Contents/Home
 #!/bin/sh
 # ----------------------------------------------------------------------------
 # Licensed to the Apache Software Foundation (ASF) under one
